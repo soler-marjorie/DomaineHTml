@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Découvrez le gîte de Lescout, un lieu de détente pour vos séjours et vacances.">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        
+        <title>
+                Bienvenue sur le site du gite de lescout !
+        </title>
+
+        <!-- icons -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: "#2BA093",
+                        gray: "#333333",
+                        beige: "#E0CDA9",
+                        white: "#FFFFFF",
+                        black: "000000",
+                    },
+
+                    fontFamily: {
+                        raleway: ["Raleway"],
+                        playfair: ["Playfair Display"],
+                    },
+                }
+            }
+            }
+        </script>
+
+
+
+        
+    </head>
+    <body>
+
+        <!-- Main navigation container -->
+        <nav class="flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral lg:flex-wrap lg:justify-start lg:py-4">
+            <div class="flex w-full flex-wrap items-center justify-between px-3">
+
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-800 lg:hidden" 
+                    type="button" 
+                    data-twe-collapse-init 
+                    data-twe-target="#navbarSupportedContent1" 
+                    aria-controls="navbarSupportedContent1" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+
+                    <!-- Hamburger icon -->
+                    <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Collapsible navigation container -->
+                <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContent1" data-twe-collapse-item>
+                    <!-- Logo -->
+                    <a class="mb-4 me-5 ms-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0" href="#">
+                        <img src="./uploads/logoGitetransparant.png" style="height: 150px" alt="Logo du domaine de lescout" loading="lazy"/>
+                    </a>
+
+                    <!-- Left navigation links -->
+                    <ul class="list-style-none me-auto flex flex-col ps-0 lg:flex-row" data-twe-navbar-nav-ref>
+                        <!-- Accueil link -->
+                        <li class="flex mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+                            <img style="height: 30px" src="./uploads/icones/maison.gif" alt="Icone d'accueil">
+                            <a 
+                            class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2" 
+                            href="index.html" 
+                            data-twe-nav-link-ref>
+                                Accueil
+                            </a>
+                        </li>
+
+                        <!-- Galerie link -->
+                        <li class=" flex mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+                            <img style="height: 30px" src="./uploads/icones/galerieIcon.gif" alt="Icone de la page galerie">
+                            <a 
+                            class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2" 
+                            href="galerie.html" 
+                            data-twe-nav-link-ref>
+                                Galerie
+                            </a>
+                        </li>
+
+                        <!-- Hebergements link -->
+                        <li class="flex mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+                            <img style="height: 30px" src="./uploads/icones/bedIcon.png" alt="Icone de la page tarifs et prestations">
+                            <a 
+                            class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2" 
+                            href="gite.html" 
+                            data-twe-nav-link-ref>
+                                Le gîte
+                            </a>
+                        </li>
+
+                        <!-- Contact link -->
+                        <li class="flex mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+                            <img style="height: 30px" src="./uploads/icones/callIcon.gif" alt="Icone de la page contact">
+                            <a 
+                            class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2" 
+                            href="contact.html" 
+                            data-twe-nav-link-ref>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+
+                <!-- Right elements 
+                <!-- Icon dropdown 
+                <div class="relative ms-4" data-twe-dropdown-ref>
+                    <a class="me-4 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none" href="#" id="navbarDropdown" role="button" data-twe-dropdown-toggle-ref aria-expanded="false">
+                        <span class="relative inline-block h-[11px] w-4 overflow-hidden bg-gray-200 leading-[11px] decoration-inherit">
+                            <span class="inline-block h-[11px] w-4 content-[''] [background-position:-36px_-26px_!important] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px]"></span>
+                        </span>
+                        <span class="ps-1 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-[10rem] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark" aria-labelledby="navbarDropdown" data-twe-dropdown-menu-ref>
+                        <li>
+                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline" href="#" data-twe-dropdown-item-ref>
+                                <span class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit">
+                                    <span class="inline-block h-[11px] w-4 content-[''] [background-position:-36px_-26px_!important] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px]"></span>
+                                </span>
+                                <span class="me-4">English</span>
+                                <span class="inline-block text-success-600 [&>svg]:h-3.5 [&>svg]:w-3.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="my-2 border-neutral-100"/>
+                        </li>
+                        <li>
+                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline" href="#" data-twe-dropdown-item-ref>
+                                <span class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit">
+                                    <span class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-72px_-572px_!important]"></span>
+                                </span>
+                                Polski
+                            </a>
+                        </li>
+                        <li>
+                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline" href="#" data-twe-dropdown-item-ref>
+                                <span class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit">
+                                    <span class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:0px_-1196px_!important]"></span>
+                                </span>
+                                中文</a>
+                        </li>
+                        <li>
+                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline" href="#" data-twe-dropdown-item-ref>
+                                <span class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit">
+                                    <span class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-36px_-910px_!important]"></span>
+                                </span>
+                                日本語</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right elements -->
+            </div>
+        </nav>
+
+        <main class="font-raleway">
+            <section>
+                <h2 class="font-playfair text-blue text-center text-xl p-6 pt-8 md:text-4xl">Nos logements</h2>
+                <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
+                    <div
+                        class="mx-3 mt-6 w-80  md:justify-self-end flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 sm:shrink-0 sm:grow sm:basis-0">
+                        <img
+                            class="rounded-t-lg"
+                            src="./uploads/chambreLit.jpg"
+                            alt="Chambre couple" 
+                        />
+                        
+                        <div class="p-6">
+                        <h5 class="mb-2 font-playfair text-center text-blue text-xl font-medium leading-tight">Chambre</h5>
+                        <p class="mb-4 text-base">
+                            <b>110€</b>
+                        </p>
+                        <p>2 adultes</p>
+                        </div>
+                    </div>
+        
+                    <div
+                        class="mx-3 mt-6 w-80 md:justify-self-center flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 sm:shrink-0 sm:grow sm:basis-0">
+                        <img
+                            class="rounded-t-lg"
+                            src="./uploads/studio.jpg"
+                            alt="Studio" 
+                        />
+        
+                        <div class="p-6">
+                            <h5 class="mb-2 font-playfair text-center text-blue text-xl font-medium leading-tight">Studio</h5>
+                            <p class="mb-4 text-base">
+                                <b>130€</b>
+                            </p>
+                            <p>2 adultes* (4 maximum)</p>
+                            <p class="text-xs">*30€ par adultes supplémentaires</p>
+                        </div>
+                    </div>
+        
+                    <div
+                        class="mx-3 mt-6 w-80 md:justify-self-start flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 sm:shrink-0 sm:grow sm:basis-0">
+                        <img
+                            class="rounded-t-lg"
+                            src="./uploads/appt3.jpg"
+                            alt="Appartement t3" 
+                        />
+        
+                        <div class="p-6">
+                            <h5 class="mb-2 font-playfair text-center text-blue text-xl font-medium leading-tight">Appartement t.3</h5>
+                            <p class="mb-4 text-base">
+                                <b>170€</b>
+                            </p>
+                            <p>2 adultes* (4 maximum)</p>
+                            <p class="text-xs">*30€ par adultes supplémentaires</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        
+            <section class="py-20 text-center">
+                <h3 class="text-blue text-xl p-6 pt-8 md:text-4xl">Votre confort</h3>
+        
+                <div class="space-x-10 justify-center md:flex">
+                    <div>
+                        <img class="m-auto" style="height: 70px" src="./uploads/icones/jacuzzi.png" alt="icone de jacuzzi">
+                        <p>Jacuzzi</p>
+                    </div>
+        
+                    <div>
+                        <img class="m-auto" style="height: 70px" src="./uploads/icones/spa.png" alt="icone de spa">
+                        <p>Sauna sec <br> finlandais</p>
+                    </div>
+        
+                    <div>
+                        <img class="m-auto" style="height: 70px" src="./uploads/icones/piscInt.png" alt="icone piscine intèrieure">
+                        <p>Piscine/Spa <br> intérieure chauffée</p>
+                    </div>
+        
+                    <div>
+                        <img class="m-auto" style="height: 70px" src="./uploads/icones/piscExt.png" alt="icone piscine extèrieure">
+                        <p>piscine <br> extérieure</p>
+                    </div>
+                </div>
+            </section>
+                
+            <section class="text-center py-10">
+                <h3 class="text-blue text-xl text-center p-6  md:text-4xl">Prestations/Room service</h3>
+        
+                <p>Sauna supplément 20€.</p>
+                <br>
+                <p>Petit déjeuner continental : 10 € (sur commande la veille).</p>
+                <br>
+                <p>Service bar, soft et alcool (tarifs affichés au domaine).</p>
+        
+        
+            </section>
+            
+            <section class="text-center py-10">
+                <h3 class="text-blue text-xl text-center p-6  md:text-4xl">Autres informations</h3>
+        
+                <p>Tout le matèriel balnéo peut être privatisé sur demande.</p>
+                <br>
+                <p>Pour les adeptes concernés, les parties balnéo et piscine privatisées sont nudité autorisées.</p>
+                <br>
+                <p>Pour la tranquilité et paisibilité de notre clientèle, le domaine naccepte pas les mineurs de moins de 16 ans.</p>
+                <br>
+                <p>Les chiens sont acceptés selon la taille, veuillez en faire la demande à la réservation. <br>
+                    Il vous en coûtera 10€ par animal et par nuit.</p>
+            </section>
+        </main>
+        
+   
+
+        <footer class="bg-blue text-center lg:text-left">
+            <div class="bg-black/5 p-4 text-center text-surface">
+                © 2024 Gîtes du Sor - Le domaine de Lescout |
+                <a href="">Mentions légales</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
